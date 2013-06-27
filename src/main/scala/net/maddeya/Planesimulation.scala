@@ -20,10 +20,10 @@ class Counter extends Actor {
   }
 }
 
-object Planesimulation extends App {
+object TickTock extends App {
   import ExecutionContext.Implicits.global
   
-  val system = ActorSystem("Planesimulation")
+  val system = ActorSystem("TickTock")
 
   val counter = system.actorOf(Props[Counter])
 
